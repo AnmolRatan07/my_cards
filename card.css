@@ -1,0 +1,57 @@
+/* use a universial selector */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+.center {
+    /* full height & width ko use krne ke liye ye liya hai */
+   /* width: 100vw;
+   height: 100vh; */
+
+   width: 100%;
+   height: 100%;
+   min-height: 765px;
+
+   /* ye gradient https://cssgradient.io/gradient-backgrounds/ es website se uthaya hai */
+   background-color: #8EC5FC;
+   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+   /* me andar wale box ko center me rakhana chahata hu es liye flax ja use kr rha hu */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+   .box{
+       width: 320px;
+       height: 530px;
+       background-color: white;
+       border-radius: 20px;
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       /* har item ke bichh me gap chahiye */
+      gap: 30px;
+      padding: 20px;
+   }
+
+ /* ek box hai uske andar ek img padi hai */
+  .box img{
+       height: 58%;
+       width: 100%;
+       border-radius: 10px;
+  }
+
+  /* ek box hai uske andar ek heading pada hai */
+  .box h2{
+    font-weight: bold ;
+    font-size: 1.5rem ;
+  }
+
+  /* ek box hai uske andar ek paragraph pada hai */
+  .box p{
+    font-size: 1.2em;
+  }
